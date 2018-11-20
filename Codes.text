@@ -1,0 +1,36 @@
+<!-- HTML -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CSS	 -->
+
+body{
+	background-image: url(../images/BootstrapBackground.jpg);
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+
