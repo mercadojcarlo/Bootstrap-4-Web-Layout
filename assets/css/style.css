@@ -23,18 +23,31 @@
 	height: 100vh;
 }
 
-#slides img{
+img{
 	height: 100vh;
 	max-height: 100vh;
 }
 
-.google-maps {
+/*home page*/
+
+
+
+
+
+
+/*end of home page*/
+
+
+
+/*contact us page*/
+
+#contactpage .google-maps {
 	position: relative;
 	padding-bottom: 75%; 
 	overflow: hidden;
 }
 
-.google-maps iframe {
+#contactpage .google-maps iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -42,4 +55,58 @@
     height: 100%; 
 }
 
+/*end of contact us page*/
 
+
+
+
+/*about us page*/
+
+#aboutpage #jumbotron-about{
+	background-color: #141414;
+	height: 90vh;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+#aboutpage #landing-about{
+	color: #f2f2f2;
+	font-size: 5em;
+	padding-top: 20vh;
+	letter-spacing: 5px;
+}
+
+#aboutpage .about-tags {
+	
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+#aboutpage #mission{
+	height: 100%;
+	background-color: #141414; /*off black*/
+	color: #f2f2f2; /*off white*/
+}
+
+#aboutpage #vision{
+	height: 100%;
+	background-color: #f2f2f2;
+	color: #141414;
+}
+
+
+/*end about us page*/
+
+/*gallery page*/
+
+#gallerypage #head-gall{
+	margin-top: 5%;
+	background-color: #141414; /*off black*/
+	color: #f2f2f2; /*off white*/
+	text-transform: uppercase; /*uppercase the text*/
+	letter-spacing: 0.5em;
+}
+
+
+/*end of gallery page*/
