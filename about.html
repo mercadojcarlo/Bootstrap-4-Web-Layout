@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 	<!-- To not zoom in -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,shrink-to-fit=no">
 	<!-- for internet explorer -->
 	<meta http-equiv="X-UA-Compatible" contend="IE=Edge">
 
@@ -14,7 +14,8 @@
 	<title>About</title>
 
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+	<!-- font-family: 'Black Han Sans', sans-serif; -->
 
 	<!-- fontawesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -31,124 +32,87 @@
 </head>
 <body id="aboutpage">
 
-	<div class="container-fluid px-0">
+	
 	 	
 		<!-- Nav Bar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 			<div class=container-fluid>
-				<a class="navbar-brand" href="#"><img class="img-fluid imgd" src="assets/images/bootstraplogo.png">Home</a>
+				<a class="navbar-brand" href="home.html"><img class="img-fluid imgd" src="assets/images/bootstraplogo.png">Home</a>
 				<button class="navbar-toggler" type="btn btn-lg" data-toggle="collapse" data-target="#navbar-nav">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-					<div class="collapse navbar-collapse" id="navbar-nav">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item text-light"><a class="nav-link" href="#">Get Started</a>
-							</li>
-							<li class="nav-item text-light"><a class="nav-link" href="#">Components</a>
-							</li>
-							<li class="nav-item text-light"><a class="nav-link" href="#">Fluid Grid</a>
-							</li>
-							<li class="nav-item text-light"><a class="nav-link" href="#">FAQ</a>
-							</li>
-							<li class="nav-item text-light active"><a class="nav-link" href="#">About</a>
-							</li>	
-							<li class="nav-item text-light"><a class="nav-link" href="#">Contact Us</a>
-							</li>	
-						</ul>
-					</div>
-			</div>	
+				<div class="collapse navbar-collapse" id="navbar-nav">
+					<ul class="navbar-nav ml-auto">
+
+						<li class="nav-item text-light" ><a class="nav-link" href="#">Get Started</a>
+						</li>
+						<li class="nav-item text-light"> <a class="nav-link" href="FAQ.html">FAQ</a>
+						</li>
+						<li class="nav-item text-light active"> <a class="nav-link" href="about.html">About</a>
+						</li>	
+						<li class="nav-item text-light"> <a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+
+					</ul>
+				</div>	
+			</div>
 		</nav> <!-- end of nav -->
 
+
+
+	<!-- Fixed Background -->
+		<figure>
+			<div class="fixed-wrap">
+				<div id="fixed">
+					<div class="parallax"></div>
+					<figcaption class="figure-caption text-center"><h1>ABOUT BOOTSTRAP
+					</h1>
+				</figcaption>
+				</div>
+			</div>
+		</figure>
+
+
+
+	 
+	 	<div class="container-fluid">
+		 	<section id="about1" class="p-5">
+				<h2 class="about-tags mb-4">About</h2>
+
+				<p class="justify lead">
+				Learn more about the team maintaining Bootstrap, how and why the project started, and how to get involved.
+				</p>
+
+				<p class="justify lead">
+				Team Bootstrap is maintained by a small team of developers on GitHub. We’re actively looking to grow this team and would love to hear from you if you’re excited about CSS at scale, writing and maintaining vanilla JavaScript plugins, and improving build tooling processes for frontend code.</p>
+
+				<p class="justify lead">Get involved with Bootstrap development by opening an issue or submitting a pull request. Read our contributing guidelines for information on how we develop.</p>
+
+			</section>
+
+			<section id="about2" class="p-5">
+				<h2 class="about-tags mb-5">History</h2>
+
+				<p class="justify lead">Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most popular front-end frameworks and open source projects in the world.</p>
+
+				<p class="justify lead">Bootstrap was created at Twitter in mid-2010 by @mdo and @fat. Prior to being an open-sourced framework, Bootstrap was known as Twitter Blueprint. A few months into development, Twitter held its first Hack Week and the project exploded as developers of all skill levels jumped in without any external guidance. It served as the style guide for internal tools development at the company for over a year before its public release, and continues to do so today.</p>
+
+				<p class="justify lead">Originally released on Friday, August 19, 2011, we’ve since had over twenty releases, including two major rewrites with v2 and v3. With Bootstrap 2, we added responsive functionality to the entire framework as an optional stylesheet. Building on that with Bootstrap 3, we rewrote the library once more to make it responsive by default with a mobile first approach.</p>
+
+				<p class="justify lead">With Bootstrap 4, we once again rewrote the project to account for two key architectural changes: a migration to Sass and the move to CSS’s flexbox. Our intention is to help in a small way to move the web development community forward by pushing for newer CSS properties, fewer dependencies, and new technologies across more modern browsers.</p>
+
+			</section>
+		</div>
+
 		
-
-
-
-
-
-
-
-
-	 <section id="jumbotron-about" class="jumbotron">
-	 	<h1 id="landing-about" class="text-center animated fadeInUp">MEET THE TEAM</h1>
-
-
 	
 
 
-
-
-	 </section>
-
-
-	 </div> <!-- enf of container fluid -->
-
-
-	 <div class="container-fluid px-0">
-	 	
-		 	<section id="mission" class="p-5">
-				<h2 class="about-tags mb-5">Our Mission</h2>
-
-				<p class="justify lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-				<p class="justify lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-				<p class="justify lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			</section>
-
-			<section id="vision" class="p-5">
-				<h2 class="about-tags mb-5 text-right">Our Vision</h2>
-
-				<p class="justify lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-				<p class="justify lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-				<p class="justify lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			</section>
-
-
-		
-	 <div> <!-- enf of container fluid -->
-
-
-
-
-
-
-
-
-
+		<footer>
+			<div class="container-fluid ">
+					<p class="text-center">&copy; Bootstrap4</p>
+			</div>
+		</footer>
 
 
 

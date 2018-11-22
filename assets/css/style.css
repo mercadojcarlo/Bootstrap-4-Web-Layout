@@ -21,16 +21,13 @@
 
 
 
-
-	
-
 /*home page*/
 
 #homepage html, body{
 	height: 100%;
 	width: 100%;
-	font-family: 'Poppins', sans-serif;
 	color: #222;
+	font-family: 'Arimo', sans-serif;
 }
 
 .navbar {
@@ -63,7 +60,7 @@
 #homepage .carousel-caption h1 {
 	font-size: 500%;
 	text-transform: uppercase;
-	text-shadow: 1px 1px 15px #000;
+	text-shadow: 1px 1px 15px #000; /*TEXT SHADOW*/
 }
 
 #homepage .carousel-caption h3 {
@@ -85,7 +82,6 @@
 
 #homepage .jumbotron{
 	border-radius: 0;
-
 }
 
 #homepage .padding{
@@ -168,13 +164,31 @@
 
 
 
-.parallax{
-    background-image: url(assets/images/Bootstrap4.png);
+#homepage .parallax{
+    background-image: url(../images/Bootstrap4.png);
+    height: 500px;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#aboutpage .parallax{
+    background-image: url(../images/mountain2.png);
+    height: 500px;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#aboutpage h1{
+	text-shadow: 1px 1px 15px #000; /*TEXT SHADOW*/
+	top: -50%;
 }
 
 #homepage footer{
@@ -194,7 +208,7 @@
 	color: #d5d5d5;
 }
 
-hr.light-100{
+hr.light-100 {
 	border-top: 1px solid #d5d5d5;
 	width: 100%;
 	margin-top: 14px;
@@ -221,6 +235,14 @@ hr.light-100{
     height: 100%; 
 }
 
+#contactpage .formgroup{
+	width: 250px;
+}
+
+#contactpage .btn{
+	width: 250px;
+}
+
 /*end of contact us page*/
 
 
@@ -228,8 +250,15 @@ hr.light-100{
 
 /*about us page*/
 
+
+
+body#aboutpage{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
 #aboutpage #jumbotron-about{
-	background-color: #141414;
+	background-color: #E7E6F7; /*JUMBOTRON COLOR*/
 	height: 90vh;
 	border-radius: 0;
 	margin-bottom: 0;
@@ -249,16 +278,24 @@ hr.light-100{
 }
 
 
-#aboutpage #mission{
+#aboutpage #about1{
 	height: 100%;
-	background-color: #141414; /*off black*/
-	color: #f2f2f2; /*off white*/
+	background-color: #E3D0D8; /*off black*/
+	color: #141414;
 }
 
-#aboutpage #vision{
+#aboutpage #about2{
 	height: 100%;
-	background-color: #f2f2f2;
+	background-color: #AEA3B0;
 	color: #141414;
+}
+
+#aboutpage h1{
+	text-shadow: 1px 1px 15px #000;
+}
+
+#aboutpage h2{
+	font-family: 'Black Han Sans', sans-serif;
 }
 
 
@@ -277,6 +314,27 @@ hr.light-100{
 
 /*end of gallery page*/
 
+/*FAQ PAGE*/
+
+
+
+
+
+
+
+/* end of FAQ PAGE*/
+
+#FAQpage footer,
+#aboutpage footer,
+#contactpage footer{
+	margin-top: 20px;
+	padding-top: 20px;
+	background-color: #3f3f3f;
+	height: 64px;
+}
+
+
+
 
 
 /*Media Queries*/
@@ -289,7 +347,7 @@ hr.light-100{
 }
 
 @media (max-width: 768px){
-	.carousel-caption{
+	#homepage.carousel-caption{
 		top: 45%;
 	}
 
@@ -319,7 +377,7 @@ hr.light-100{
 }
 
 @media (max-width: 576px){
-	.carousel-caption{
+	#homepage .carousel-caption{
 		top: 40%;
 	}
 
